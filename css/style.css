@@ -1,0 +1,761 @@
+*{
+   font-family: "Lato", sans-serif !important; 
+}
+
+/* Fade-in animation base */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Triggered when in viewport */
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.navbar{
+ background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px) !important;           /* The actual blur effect */
+    z-index: 1000 !important; /* Ensure it stays on top */
+}
+.nav-link.active{
+  color: #ED138A !important;
+  font-weight: 600 !important;
+}
+.nav-link:hover{
+  color: #ED138A !important;
+  font-weight: 600 !important;
+}
+.navbar-nav button{
+  background-color: #ED138A;
+  color: #fff;
+  border: none;
+}
+.navbar-nav button:hover{
+  background-color: #D50F7A;
+}
+
+ .container-details{
+      background-color:#FEEAF3;
+    }
+
+    .hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/img/carousel/carousel.JPG'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: white;
+
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.1rem;
+    font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+.hero-text button{
+  background-color: #ED138A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #D50F7A;
+}
+   
+    .gallery-img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .gallery-img:hover {
+    transform: scale(1.05);
+  }
+  .text-center{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .impact-message {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(83, 83, 83);
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    padding-bottom: 20px;
+    line-height: 1.5;
+  }
+  .btn-liquid {
+  position: relative;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+   background: #FEEFEA;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ED138A;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); /* Adds soft depth for contrast */
+  font-weight: 500;
+  letter-spacing: 0.5px; /* Slight spacing for clarity */
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(237, 19, 138, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+}
+
+.btn-liquid::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+ background: radial-gradient(circle at 50% 50%, rgba(237, 19, 138, 0.3), transparent 60%);
+  animation: liquidMove 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes liquidMove {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(25%, 25%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.btn-liquid:hover {
+  box-shadow: 0 0 30px rgba(237, 19, 138, 0.4);
+  transform: scale(1.05);
+}
+.card-text{
+  text-align: center !important;
+  font-style: italic !important;
+  color: rgb(100, 116, 139) !important;
+}
+.Front-liners img{
+  width: 80px;        /* Adjust this for size – try 150–220px */
+  height: 80px;
+  object-fit: cover;   /* Ensures the image doesn't stretch */
+  border-radius: 50%;  /* Perfect circle */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;      /* Centers the image */
+}
+.Front-liners small{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  padding-top:10px;
+ color: rgb(83, 83, 83);
+}
+.wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  background-color: #F8F9FC;
+  padding-bottom: 35px;
+}
+ .wrapper h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 20px ;
+ }   
+ .wrapper p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+  padding-top: 10px;
+  padding-bottom: 20px;
+ }
+ .wrapper button{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: #ED138A;
+  border-color: #ED138A;
+  margin-top:-10px;
+ }
+ .wrapper button:hover{
+  background-color: #D50F7A;
+  border-color: #D50F7A;
+ }
+ .projects{
+  text-align: center;
+ }
+ .projects h1{
+   text-align: center;
+   font-weight: 700;
+   font-size: 20px;
+   text-transform: uppercase;
+   padding-top: 30px;
+ }
+ .projects p{
+   text-align: center;
+   font-weight: 400;
+   font-size: 16px;
+   color: rgb(83, 83, 83);
+   padding-top: 10px;
+   padding-bottom: 20px;
+   padding-left: 30px;
+   padding-right: 30px;
+ }
+ .card{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+ }
+ .card h5{
+  padding-top: 15px;
+  font-weight: 600;
+ }
+ .card p{
+  padding-left: 0px;
+  padding-right: 0px;
+ }
+ 
+ .projects-card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* spacing between cards */
+     margin-left: 20px;
+  margin-right: 20px;
+  }
+
+  .projects-card-wrapper .card {
+    flex: 0 0 48%; /* 2 cards per row */
+  }
+
+ .bg-white{
+  background-color: #F8F9FC !important;
+  
+ }
+ .row h6{
+  font-size: 18px;
+ }
+ #footer-statement{
+  padding-top: 10px;
+ }
+ form{
+  padding-top: 20px;
+ }
+ form button{
+  background-color:#ED138A !important;
+  border-color: #ED138A !important;
+ }
+ .copyright{
+  text-align: center;
+  padding-bottom: 20px;
+ }
+ .d-flex{
+  margin-top: 10px;
+ }
+ .me-3 img{
+  margin-right: 10px;
+ }
+
+/* Pulse Animation for Images */
+ .pulse-img {
+  width: 100px;
+  height: auto;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  /* End Pulse Animation for Images */
+}
+
+/* ======= Contact Page ======= */
+.cover-image {
+  background-image: url('../assets/img/contact-cover/DSC04457.JPG');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  margin-top:5%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color: white;
+  z-index: 1;
+
+}
+.cover-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1; /* Behind the text */
+}
+.cover-image h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.cover-image p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    background-color: #FFEFF6 !important;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.container-purpose .card{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+ label {
+ text-align: center;
+ display: none;
+}
+input, #message {
+  text-align: center;
+}
+
+.custom-contact-line {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight:lighter !important;
+}
+.center-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 20px; /* optional */
+}
+
+
+@media (min-width: 320px){
+#logo{
+  width: 55px;
+  margin-left:15%;
+}
+.navbar-nav a{
+ text-align: center;
+}
+.hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+ .hero-bg{
+  margin-top: 10%;
+  width: 100%;
+ }
+
+    .foundation-info{
+  margin-top: 10%;
+}
+.foundation-info h2{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+.foundation-info p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+  .foundation-info button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:20px;
+  }
+  .container-details{
+    padding-bottom: 30px;
+  }
+    .container-details h2{
+      text-align: center;
+      padding-top:50px !important;
+      margin-top: 15%;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 30px;
+    }
+   .container-details p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(83, 83, 83);
+   }
+   .container-details h4{
+    text-align: center;
+    font-weight: 600;
+    font-size: 19px;
+   }
+   .factors{
+    margin-top: 15%;
+   }
+   .factors img{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+   
+   .sub-text{
+  text-align: center !important;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.factors h4{
+  padding-top: 15px;
+}
+.factors p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+  padding-top: 10px;
+}
+.factors-hyper{
+  margin-top: 15%;
+  padding-bottom: 20px;
+}
+.btn-liquid{
+  margin-top: 50px;
+}
+
+.text-center{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.list-unstyled li{
+  margin-top: 10px;
+  margin-bottom: 8px;
+ }
+.foot-icons{
+  margin-left: 10px;
+ }
+ /* ======= About Page ======= */
+ .Janet img{
+  margin-top: 25%;
+  width: 300px;
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.Janet h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.Janet p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.purpose h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.center-wrapper{
+  top: 70%;
+}
+ /* ======= Contact Page ======= */
+ 
+
+}
+  /* Mobile Landscape-specific styles */
+ @media (min-width: 320px) and (orientation:landscape){
+  .Janet img{
+    margin-top: 10%;/* Reset margin-top to avoid layout issues */
+  }
+ }
+
+@media (min-width: 992px) {
+  .hero-bg{
+    margin-top: 5%;
+  }
+  .navbar-nav.ms-auto {
+  margin-right: 30px; /* or whatever looks good */
+}
+  .navbar-brand {
+  margin-left: 15%; /* Try 5% to 10% — works better here than on the image itself */
+}
+  .hero-text h1{
+     font-size:4rem; /* 32px */
+  font-weight: 700;
+  }
+  .hero-text p{
+    font-size: 1.5rem; /* 24px */
+  }
+  .foundation-info{
+    margin-top: 5%;
+  }
+  .foundation-info p{
+    padding: 0 300px; 
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .container-details{
+    margin-top: -10%;
+  }
+
+  .container-message{
+    padding: 0 300px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+  }
+ 
+  .factors{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* Adjust spacing between items as needed */
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 50px;
+  }
+  .factors p{
+    padding: 0 50px; 
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .factors-hyper{
+ margin-top: 30px;
+  }
+  .impact-message{
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .row.g-4{
+    margin-top: 30px;
+  }
+
+
+  #cardCarousel .card-body p {
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Janet {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px; /* spacing between image and text */
+   margin-top: 10%;
+  }
+  .Janet img{
+  margin-top: 2%;
+  margin-left: 20%;
+}
+   .janet-text {
+    flex: 1;
+  }
+
+  .janet-text h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .janet-text p {
+    font-size: 1.2rem;
+    color: rgb(83, 83, 83);
+    line-height: 1.5;
+      padding-left: 60px;
+    padding-right: 60px;
+  }
+  .purpose {
+    margin-top: 10%;
+  }
+  .center-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 20px; /* optional */
+}
+  
+  /* Your desktop-only styles go here */
+}
+/* ======= Small Mobile Responsive Styles ======= */
+@media (max-width:375px){
+     .give-section img {
+      height:300px; /* Adjust this height as needed */
+      object-fit: cover;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+   .row.g-4 > div {
+    width: 50% !important; /* Forces 2 per row */
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+    .hero-text h1 {
+    font-size: 3.4rem;
+  }
+  .hero-text p {
+    font-size: 1.7rem;
+  }
+  .foundation-info p{
+      padding: 0 100px; 
+      padding-top: 20px;
+  }
+  .container-details p{
+    padding: 0 100px; 
+    padding-top: 20px;
+  }
+  .factors p{
+    padding: 0 100px; 
+  }
+  .factors{
+   margin-top: 30px;
+   padding-bottom: 60px;
+  }
+   .wrapper p{
+    padding: 0 200px; 
+   }
+   .wrapper button{
+    margin-top: 20px;
+   }
+   #footer-name {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    display: block;
+    font-weight: bold;
+    color: #212529; /* optional if you want it to match h6 */
+  }
+
+  .footer-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  /* ======= About Page ======= */
+  .Janet img{
+    margin-top: 10%;
+  }
+  .janet-text p {
+   padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+/* Landscape-specific styles for devices between 768px and 1024px width */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation:landscape){
+  .foundation-info p{
+    padding: 0 50px; 
+    padding-top: 20px;
+  }
+  /* Landscape-specific styles */
+}

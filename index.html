@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+ crossorigin="anonymous">
+<!-- Bootstrap Icons -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+ <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+<!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" 
+rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obaa Afia Foundation</title>
+</head>
+<body>
+   
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img id="logo" src="assets/img/logo/Logo.png" alt="Obaa Afia Foundation Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="about us.html">About Us</a>
+         <a class="nav-link" href="#ourgallery">Our Gallery</a>
+       <a class="nav-link" href="#ourprojects">Our Projects</a>
+         <a class="nav-link" href="#">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="hero-bg">
+  <div class="hero-text">
+    <h1>Give Today and Save <span style="color: #ED138A;">Tomorrow</span></h1>
+    <p>Giving not only enriches the lives of others but also brings fulfillment to your own.</p>
+    <button type="button" class="btn btn-primary">
+  <i class="bi bi-arrow-right"></i> Join Us Today</button>
+
+  </div>
+</div>
+
+
+
+
+<div class="foundation-info">
+    <h2>About the Obaa Afia Foundation</h2>
+    <p>At the heart of the Obaa Afia Foundation is a promise — a promise to turn personal loss into purpose. 
+      Founded in loving memory of Mrs. Janet Obeng (Obaa Afia), our mission is to bring hope, awareness, and access to 
+      health services for kidney disease and hypertension in Ghana.</p>
+      <button type="button" class="btn border border-secondary text-secondary bg-transparent">Learn More About Us</button>
+      
+  </div>
+
+
+<div class="container-details">
+<h2>Why our work matters</h2>
+<p class="container-message">The Obaa Afia Foundation is focused on reducing the risk of kidney disease through early screening for hypertension and diabetes,
+   improving community health through education and outreach, and creating opportunities for women to strengthen their role in family 
+   health and economic development.</p>
+   <div class="factors">
+    <div>
+       <img src="assets/img/icons/kid.png" alt="">
+       <h3 class="sub-text">13.3%</h3>
+       <h4>Kidney Diseases</h4>
+       <p>Kidney disease is a growing health concern in Ghana, often going undetected until it reaches advanced stages. 
+         Early diagnosis and regular checkups are key to preventing serious complications.</p>
+    </div>
+    <div>
+      <img src="assets/img/icons/hyper.png" alt="hypertension">
+      <h3 class="sub-text">30%</h3>
+      <h4>Hypertension</h4>
+      <p>Hypertension, or high blood pressure, is a silent killer that affects many Ghanaians. 
+        It often goes unnoticed until it leads to severe health issues, including kidney damage.</p>
+    </div>
+</div>
+</div>
+
+
+<!-- Gallery Section -->
+<div class="container py-5">
+  <h2 id="ourgallery" class="mb-4 text-center">Moments of Impact</h2>
+  <p class="impact-message">These images capture more than just events, they reflect the hope we share, the lives we uplift, and the strength of community.
+     Whether it's through health outreach, support for families, or simply showing up for those in need, each moment reminds us that
+      even the smallest act of kindness can spark lasting change. This is the heart of the Obaa Afia Foundation.</p>
+  <div class="row g-4">
+    <!-- Image 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <img src="assets/img/gallery/gallery1.JPG" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <img src="assets/img/gallery/gallery2.JPG" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+    </div>
+
+    <!-- Image 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <img src="assets/img/gallery/gallery3.JPG" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+    </div>
+
+    <!-- Image 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <img src="assets/img/gallery/gallery4.JPG" class="img-fluid rounded shadow-sm gallery-img" alt="Gallery Image 4" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(this.src)">
+    </div>
+    <!-- Add more images here -->
+  </div>
+  <button style="margin-left: auto;margin-right: auto;display: block;" class="btn btn-liquid">See More</button>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0">
+      <img id="modalImage" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container py-5">
+  <h2 class="mb-4 text-center">Meet the People Behind the Mission</h2>
+  <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center px-3 px-lg-5">
+  <div class="card w-100 w-lg-75 px-3 py-3">
+            <div class="card-body">
+              <p class="card-text">“ No matter how big or small, are the fuel that powers our mission. They enable us 
+                to reach those in need, provide essential resources, and create lasting change in communities.”</p>
+              <div class="Front-liners">
+                    <img src="assets/img/gallery/Faces/frontliner1.jpg" alt="Liner1">
+                     <small>Michael Appiah, Founder.</small>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center px-3 px-lg-5">
+  <div class="card w-100 w-lg-75 px-3 py-3">
+
+            <div class="card-body">
+              <p class="card-text">“At the heart of our mission is the belief that every small act of kindness can create a ripple effect 
+                of positive change. We are a team bound by a shared commitment to lifting others up.”</p>
+                <div class="Front-liners">
+                    <img src="assets/img/gallery/Faces/frontliner2.jpg" alt="Liner2">
+                     <small>Eric Amoah, Contributor.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+       <div class="d-flex justify-content-center px-3 px-lg-5">
+  <div class="card w-100 w-lg-75 px-3 py-3">
+
+            <div class="card-body">
+              <p class="card-text">“Charity is about more than just giving—it's about making a lasting difference. Through this foundation, 
+                I've seen firsthand how small acts of kindness can transform lives.”</p>
+              <div class="Front-liners">
+                    <img src="assets/img/gallery/Faces/frontliner3.jpg" alt="Liner3">
+                     <small>Francis Akom, Contributor.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center px-3 px-lg-5">
+  <div class="card w-100 w-lg-75 px-3 py-3">
+
+            <div class="card-body">
+              <p class="card-text">“We believe that small acts of kindness can create a ripple effect of change. Together, we have the 
+                power to make a lasting impact and bring hope to those who need it most and putting smiles on their faces.</p>
+              <div class="Front-liners">
+                    <img src="assets/img/gallery/Faces/frontliner4.jpg" alt="Liner4">
+                     <small>Issac Owusu Ansah, Contributor.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Slide 5 -->
+      <div class="carousel-item">
+       <div class="d-flex justify-content-center px-3 px-lg-5">
+  <div class="card w-100 w-lg-75 px-3 py-3">
+
+            <div class="card-body">
+              <p class="card-text">“ Every donation, every volunteer hour, and every act of kindness helps us reach those in need. We are 
+                proud to stand together, united by the belief that even the smallest gesture can spark lasting change.”</p>
+              <div class="Front-liners">
+                    <img src="assets/img/gallery/Faces/frontliner5.jpg" alt="Liner5">
+                     <small>Jeffery Akom, Contributor.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+<div class="wrapper">
+<h1>Join Our Community</h1>
+<p>Connect with like-minded individuals who share your passion for making a difference in any positive and possible way.</p>
+<button type="button" class="btn btn-primary btn-md px-5">Become a Member <i style="padding-left:10px;" class="bi bi-person-plus"></i></button>
+</div>
+
+<div class="projects container">
+  <h1 id="ourprojects">Our Projects</h1>
+  <p>
+    Our projects are driven by a shared commitment to making a lasting impact in the lives of those who need it most. 
+    From providing clean water and to offering essential healthcare, we are dedicated to creating real change. 
+    But we can't do it alone — your support makes these life-changing efforts possible. Join us in making a difference today.
+  </p>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="bi bi-droplet-fill" style="color: #ED138A; font-size: 2.5rem;"></i>
+          <h5 class="card-title">Water Project</h5>
+          <p>Through our water project, we have brought clean, safe drinking water to a rural community, transforming lives and 
+            ensuring better health.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <i class="bi bi-bag-plus-fill" style="color: #ED138A; font-size: 2.5rem;"></i>
+          <h5 class="card-title">Medical Supplies</h5>
+          <p>Our medical supplies initiative has provided essential healthcare resources to underserved communities, improving access to 
+            vital treatments and care.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--footer section-->
+  <footer class="bg-white mt-5 border-top">
+  <div class="container py-5">
+    <div class="row">
+
+      <!-- About / Mission -->
+      <div class="col-md-4 mb-4">
+      <div class="footer-name-wrapper d-flex flex-column align-items-start">
+  <img class="pulse-img mb-1" style="width: 50px;" src="assets/img/logo/Logo.png" alt="">
+  <span id="footer-name">Obaa Afia Foundation</span>
+</div>
+        <p id="footer-statement" class="small text-secondary mb-0">
+         Empowering communities with healthcare, awareness, and compassion across Ghana. Together, we light the path toward hope.
+        </p>
+      <!-- Horizontal Social Icons -->
+       <div class="foot-icons">
+               <div class="d-flex align-items-center">
+  <a href="#" class="me-3">
+    <img src="assets/img/icons/social icons/instagram.svg" alt="Instagram" width="17" height="17">
+  </a>
+  <a href="#" class="me-3">
+    <img src="assets/img/icons/social icons/youtube.svg" alt="YouTube" width="17" height="17">
+  </a>
+  <a href="#" class="me-3">
+    <img src="assets/img/icons/social icons/facebook.svg" alt="Facebook" width="17" height="17">
+  </a>
+  <a href="#">
+    <img src="assets/img/icons/social icons/linkedin.svg" alt="LinkedIn" width="17" height="17">
+  </a>
+</div>
+       </div>
+
+      </div>
+
+      <!-- Menu Links -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold text-dark">Quick Links</h6>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Our Gallery</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+  
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold text-dark">Community</h6>
+        <ul class="list-unstyled small mb-0">
+          <li><a href="#" class="text-secondary text-decoration-none">Become a Member</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Volunteer</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Partner with Us</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Donate</a></li>
+        </ul>
+      </div>
+        <div class="Newsletter">
+          <h6 class="fw-bold text-dark">Newsletter</h6>
+          <p class="small text-secondary mb-0">Subscribe to our newsletter for the latest updates and stories from the Obaa Afia Foundation.</p>
+          <form class="d-flex align-items-center" role="search" style="max-width: 350px; width: 100%;">
+            <input type="email" class="form-control rounded-start" placeholder="Enter your email" aria-label="Email">
+            <button class="btn btn-primary rounded-end" type="submit" style="margin-left: 10px;">
+              →
+            </button>
+          </form>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="copyright">
+    <small> &copy; 2025 Obaa Afia Foundation — All rights reserved.</small>
+  </div>
+</footer>
+
+
+<!--script for images-->
+<script>
+  function showImage(src) {
+    document.getElementById('modalImage').src = src;
+  }
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tags = ['section', 'div', 'img', 'h1', 'h2', 'h3', 'p', 'ul', 'li'];
+    tags.forEach(tag => {
+      document.querySelectorAll(tag).forEach(el => {
+        el.classList.add('fade-in-on-scroll');
+      });
+    });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+  });
+</script>
+
+
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" 
+crossorigin="anonymous"></script>
+</body>
+</html>
